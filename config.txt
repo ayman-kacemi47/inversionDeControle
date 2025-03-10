@@ -1,0 +1,2 @@
+net.kacemi.ext.DaoImpl2
+net.kacemi.metier.MetierImpl
