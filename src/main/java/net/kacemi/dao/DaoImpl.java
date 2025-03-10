@@ -4,6 +4,10 @@ public class DaoImpl implements IDao {
 
     @Override
     public double getData() {
-        return 0;
+        System.out.println("Version base de données");
+        double temp = 25;
+        return temp;
     }
+
+
 }
