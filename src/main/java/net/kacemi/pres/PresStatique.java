@@ -7,13 +7,9 @@ import net.kacemi.metier.MetierImpl;
 
 public class PresStatique {
     public static void main(String[] args) {
-
-                IDao dao = new DaoImpl();
-                IMetier metier = new MetierImpl(dao);
-
-                System.out.println("res="+metier.calcul());
-
-
-            }
+        IDao dao = new DaoImpl();
+        IMetier metier = new MetierImpl(dao);
+        System.out.println("res=" + metier.calcul());
+    }
 }
 
