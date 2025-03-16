@@ -7,18 +7,18 @@ import org.springframework.stereotype.Component;
 
 @Component("metier")
 public class MetierImpl implements IMetier {
-    @Autowired
-    @Qualifier("d2")
+
     IDao dao;
 
-    public MetierImpl() {
-
-    }
+// On doit l'enlever pour faire instantation par constructeur et eviter "this.dao" is null
+//    public MetierImpl() {
+//
+//    }
 
     /*
     Pour injecter un objet d'une classe qui implémente l'interface IDao pendant l'instantiation
      */
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d2") IDao dao) {
         this.dao = dao;
     }
 
