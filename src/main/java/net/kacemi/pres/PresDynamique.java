@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Scanner;
 
-public class Pres2 {
+public class PresDynamique {
     public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Scanner sc = new Scanner(new File("config.txt"));
         //lire la classe dao à partir du fichier config

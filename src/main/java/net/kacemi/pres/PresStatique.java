@@ -5,7 +5,7 @@ import net.kacemi.dao.IDao;
 import net.kacemi.metier.IMetier;
 import net.kacemi.metier.MetierImpl;
 
-public class Pres1 {
+public class PresStatique {
     public static void main(String[] args) {
 
                 IDao dao = new DaoImpl();
